@@ -9,9 +9,13 @@ This project is a simple example of how to use gRPC with Spring Cloud Gateway, w
 
 ### Generate protobuf file
 
-```shell    
-protoc.exe --proto_path=src\main\resources\proto --descriptor_set_out=src\main\resources\proto\greeting.pb src\main\resources\proto\greeting.proto
+```shell
+ .\gradlew build 
 ```
+```shell
+ .\gradlew.bat build
+```
+
 ### Run project
 
 ```shell
