@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id "io.github.lognet.grpc-spring-boot" version '5.1.5'
+    id "com.google.protobuf" version "0.9.4"
     id 'org.springframework.boot' version '3.2.6'
     id 'io.spring.dependency-management' version '1.1.5'
 }
@@ -51,4 +52,20 @@ dependencyManagement {
 
 tasks.named('test') {
     useJUnitPlatform()
+}
+
+
+protobuf {
+    generateProtoTasks {
+        all().configureEach { task ->
+            task.generateDescriptorSet = true
+        }
+    }
+}
+
+processResources {
+    from ('/build/generated/source/proto/main/descriptor_set.desc') {
+        into '.'
+    }
+    dependsOn('generateProto')
 }

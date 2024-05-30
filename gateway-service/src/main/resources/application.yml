@@ -13,8 +13,8 @@ spring:
           filters:
             - name: JsonToGrpc
               args:
-                protoDescriptor: classpath:proto/greeting.pb
-                protoFile: classpath:proto/greeting.proto
+                protoDescriptor: classpath:descriptor_set.desc
+                protoFile: classpath:greeting.proto
                 service: GreetingService
                 method: Hello
       httpclient:

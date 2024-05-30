@@ -5,6 +5,7 @@
 This project is a simple example of how to use gRPC with Spring Cloud Gateway, with some customizations:
 * Disable SSL
 * Use protobuf file to generate the gRPC service
+* Use protobuf-gradle-plugin to generate the descriptor file
 
 ### Generate protobuf file
 
