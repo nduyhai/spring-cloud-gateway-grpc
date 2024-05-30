@@ -1,0 +1,6 @@
+rootProject.name = 'spring-cloud-gateway-grpc'
+
+include 'gateway-service'
+include 'greeting-service'
+
+

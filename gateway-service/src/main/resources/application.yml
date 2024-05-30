@@ -1,0 +1,28 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: greeting-service-route
+          uri: grpc://localhost:6565
+          predicates:
+            - Path=/greetings/**
+          filters:
+            - name: JsonToGrpc
+              args:
+                protoDescriptor: classpath:proto/greeting.pb
+                protoFile: classpath:proto/greeting.proto
+                service: GreetingService
+                method: Hello
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always

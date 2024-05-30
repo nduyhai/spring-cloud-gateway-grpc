@@ -1,0 +1,19 @@
+server:
+  port: 9091
+  http2:
+    enabled: true
+grpc:
+  enabled: true
+  port: 6565
+  enableReflection: true
+spring:
+  application:
+    name: gateway-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always

@@ -1,1 +1,3 @@
 # spring-cloud-gateway-grpc
+
+C:\Users\ndhai\Downloads\protoc-27.0-win64\bin\protoc.exe --proto_path=C:\Users\ndhai\IdeaProjects\spring-cloud-gateway-grpc\gateway-service\src\main\resources\proto --descriptor_set_out=C:\Users\ndhai\IdeaProjects\spring-cloud-gateway-grpc\gateway-service\src\main\resources\proto\greeting.pb C:\Users\ndhai\IdeaProjects\spring-cloud-gateway-grpc\gateway-service\src\main\resources\proto\greeting.proto
