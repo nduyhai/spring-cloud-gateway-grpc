@@ -9,13 +9,14 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class GRPCLocalConfiguration {
-    @Bean
-    public GrpcSslConfigurer grpcSslConfigurer(HttpClientProperties properties) {
-        return new GrpcSslConfigurer(properties.getSsl()) {
-            @Override
-            public ManagedChannel configureSsl(NettyChannelBuilder builder) {
-                return builder.usePlaintext().defaultLoadBalancingPolicy("round_robin").build();
-            }
-        };
-    }
+
+  @Bean
+  public GrpcSslConfigurer grpcSslConfigurer(HttpClientProperties properties) {
+    return new GrpcSslConfigurer(properties.getSsl()) {
+      @Override
+      public ManagedChannel configureSsl(NettyChannelBuilder builder) {
+        return builder.usePlaintext().defaultLoadBalancingPolicy("round_robin").build();
+      }
+    };
+  }
 }

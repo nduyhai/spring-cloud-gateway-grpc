@@ -10,7 +10,7 @@ This project is a simple example of how to use gRPC with Spring Cloud Gateway, w
 ### Generate protobuf file
 
 ```shell
- .\gradlew build 
+ gradle build 
 ```
 ```shell
  .\gradlew.bat build
@@ -19,7 +19,7 @@ This project is a simple example of how to use gRPC with Spring Cloud Gateway, w
 ### Run project
 
 ```shell
- .\gradlew bootRun --parallel
+ gradle bootRun --parallel
 ```
 ```shell
  .\gradlew.bat bootRun --parallel
