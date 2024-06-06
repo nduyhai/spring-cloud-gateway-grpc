@@ -39,8 +39,7 @@ curl --location 'localhost:8080/greetings/hello' \
 
 ### Protobuf
 
-* Version 2 of protoc supported. Version 3 is not supported. [Watch this](https://github.com/FasterXML/jackson-dataformats-binary/blob/2.18/protobuf/README.md(https://github.com/FasterXML/jackson-dataformats-binary/blob/2.18/protobuf/README.md)
-)
+* Version 2 of protoc supported. Version 3 is not supported. [Watch this](https://github.com/FasterXML/jackson-dataformats-binary/blob/2.18/protobuf/README.md)
 * Don't use required fields in response message. 
 
 Use this
