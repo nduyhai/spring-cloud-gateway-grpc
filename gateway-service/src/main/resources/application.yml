@@ -17,9 +17,6 @@ spring:
                 protoFile: classpath:greeting.proto
                 service: GreetingService
                 method: Hello
-      httpclient:
-        ssl:
-          use-insecure-trust-manager: true
 
 management:
   endpoints:

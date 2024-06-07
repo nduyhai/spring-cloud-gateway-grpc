@@ -59,12 +59,14 @@ protobuf {
     generateProtoTasks {
         all().configureEach { task ->
             task.generateDescriptorSet = true
+            task.descriptorSetOptions.path =
+                    "${projectDir}/build/descriptors/descriptor_set.desc"
         }
     }
 }
 
 processResources {
-    from ('/build/generated/source/proto/main/descriptor_set.desc') {
+    from("${projectDir}/build/descriptors/descriptor_set.desc") {
         into '.'
     }
     dependsOn('generateProto')

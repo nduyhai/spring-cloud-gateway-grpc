@@ -12,6 +12,8 @@ This project is a simple example of how to use gRPC with Spring Cloud Gateway, w
 ```shell
  gradle build 
 ```
+or 
+
 ```shell
  .\gradlew.bat build
 ```
@@ -21,6 +23,8 @@ This project is a simple example of how to use gRPC with Spring Cloud Gateway, w
 ```shell
  gradle bootRun --parallel
 ```
+or 
+
 ```shell
  .\gradlew.bat bootRun --parallel
 ```
