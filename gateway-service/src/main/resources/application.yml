@@ -17,6 +17,15 @@ spring:
                 protoFile: classpath:greeting.proto
                 service: GreetingService
                 method: Hello
+        - id: reflection-greeting-service-route
+          uri: grpc://localhost:6565
+          predicates:
+            - Path=/reflections/**
+          filters:
+            - name: JsonToReflectionGrpc
+              args:
+                service: GreetingService
+                method: Hello
 
 management:
   endpoints:
