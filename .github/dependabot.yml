@@ -1,6 +1,6 @@
 version: 2
 updates:
-  - package-ecosystem: "maven" # Change based on your package manager (npm, gradle, pip, etc.)
+  - package-ecosystem: "gradle"
     directory: "/" # Root directory of your project
     schedule:
       interval: "weekly" # Options: daily, weekly, monthly
