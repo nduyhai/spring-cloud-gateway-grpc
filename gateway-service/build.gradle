@@ -35,7 +35,7 @@ dependencies {
     implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-protobuf:2.18.3'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.18.3'
     implementation 'com.fasterxml.jackson.core:jackson-core:2.18.3'
-    implementation 'io.grpc:grpc-netty:1.64.0'
+    implementation 'io.grpc:grpc-netty:1.70.0'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
